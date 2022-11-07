@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Blog</title>
+    <title>Homepage</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,8 +20,8 @@
 
     <!-- background images -->
 
-    <img class="bg-bot" src="./images/Flag_of_Sealand.svg">
-    <img class="bg-top" src="./images/background overlay.svg">
+    <img class="bg-bot" src="./images/background/Flag_of_Sealand.svg">
+    <img class="home-bg-top" src="./images/background/background overlay.svg">
 
 
     <div class="main-con">
@@ -43,7 +43,11 @@
                 <div class="card-body">
                     <h5 class="card-title">Programming</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">See more</a>
+                    <div class="language-con">
+                        <a href="./pages/c.html"><img src="./images/code logos/C.svg" class="logo"></a>
+                        <a href="./pages/python.html"><img src="./images/code logos/Python.svg" class="logo"></a>
+                        <a href="./pages/html+css.html"><img src="./images/code logos/HTML5.svg" class="logo"></a>
+                    </div>
                 </div>
             </div>
             
@@ -65,6 +69,7 @@
                 </div>
             </div>
         </div>
+
         <footer-component></footer-component>
     </div>
 
