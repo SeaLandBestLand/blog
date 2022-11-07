@@ -18,11 +18,15 @@
 <body>
     <script>
         let url = window.location.href;
-        if (!(url.includes('github'))) {
+        if (url.includes('github')) {
+            console.log('github');
+            // do nothing
+        } else {
+            console.log('not github');
             url = url.slice(0,-10);
-        };
+        }
         url += 'pages/home.html';
-        window.location.replace(url);
+        //window.location.replace(url);
     </script>
 </body>
 
