@@ -18,7 +18,9 @@
 <body>
     <script>
         let url = window.location.href;
-        url = url.slice(0,-10);
+        if (!(url.includes('github'))) {
+            url = url.slice(0,-10);
+        };
         url += 'pages/home.html';
         window.location.replace(url);
     </script>
