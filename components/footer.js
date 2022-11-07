@@ -5,7 +5,7 @@ class Footer extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-        <footer class="text-center text-lg-start mt-auto footer">
+        <footer class="text-center text-lg-start mt-auto" id="footer">
             <div class="text-center text-white p-3">
                 <div>
                     <p><b>Email:</b> osharp248@fareham.ac.uk</p>
