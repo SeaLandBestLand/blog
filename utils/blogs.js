@@ -10,7 +10,7 @@ const colours = {
     'Masterclasses': '#83EEFF',
 }
 
-for (var x = 1; x < 8; x++) {
+for (var x = 1; x < 5; x++) {
     if (x > blogData.length) {
         break;
     }
