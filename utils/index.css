@@ -48,7 +48,7 @@ body {
 }
 
 .nav-link {
-    transition: 0.75s;
+    transition: 0.5s;
 }
 
 .nav-link:hover {
@@ -120,4 +120,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.powerpoint {
+    width: 50%;
+    height: 40vh;
+}
+
+.requirements-notes {
+    display: flex;
+}
+
+.requirements-example {
+    display: none;
+}
+
+.button-con {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn {
+    margin: 10px;
 }

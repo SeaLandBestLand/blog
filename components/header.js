@@ -47,6 +47,7 @@ class Header extends HTMLElement {
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
                     <li><a class="dropdown-item" id="ui/ux" href="./ui+ux.html">UI/UX</a></li>
+                    <li><a class="dropdown-item" id="functionalRequirements" href="./functional requirements.html">Functional Requirements</a></li>
                   </ul>
                 </li>
                 <!-- -->
