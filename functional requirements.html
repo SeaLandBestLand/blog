@@ -26,18 +26,34 @@
     <div class="main-con">
 
         <div class="requirement-examples">
-            <h1><center>Example</center></h1>
+            <h1>
+                <center>Example</center>
+            </h1>
             <div class="button-con">
-                <button type="button" class="btn btn-primary">Notes</button>
-                <button type="button" class="btn btn-primary">Example</button>
+                <button type="button" class="btn btn-primary" onclick="ShowNotes()">Notes</button>
+                <button type="button" class="btn btn-primary" onclick="ShowExample()">Example</button>
             </div>
             <div class="center">
-                <iframe
-                    src="https://farehamcollege-my.sharepoint.com/personal/osharp248_fareham_ac_uk/_layouts/15/Doc.aspx?sourcedoc={824646c2-4d3d-400f-8fd8-6be8dfb221e1}&amp;action=embedview&amp;wdAr=1.7777777777777777"
-                    class="powerpoint requirements-example" frameborder="0">This is an embedded <a target="_blank"
-                    href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank"
-                    href="https://office.com/webapps">Office</a>.
-                </iframe>
+                <!-- notes -->
+                <div class="requirements-notes">
+                    <iframe
+                        src="https://farehamcollege-my.sharepoint.com/personal/osharp248_fareham_ac_uk/_layouts/15/Doc.aspx?sourcedoc={aaa10cd1-7545-4927-8e38-59f81faaaeff}&amp;action=embedview&amp;wdAr=1.7777777777777777"
+                        class="powerpoint" frameborder="0">This is an embedded <a target="_blank"
+                            href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank"
+                            href="https://office.com/webapps">Office</a>.
+                    </iframe>
+                </div>
+
+                <!-- example -->
+                <div class="requirements-example">
+                    <iframe
+                        src="https://farehamcollege-my.sharepoint.com/personal/osharp248_fareham_ac_uk/_layouts/15/Doc.aspx?sourcedoc={824646c2-4d3d-400f-8fd8-6be8dfb221e1}&amp;action=embedview&amp;wdAr=1.7777777777777777"
+                        class="powerpoint" frameborder="0">This is an embedded <a target="_blank"
+                            href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank"
+                            href="https://office.com/webapps">Office</a>.
+                    </iframe>
+                </div>
+
             </div>
         </div>
 
@@ -51,6 +67,7 @@
 
 
     <script src="./utils/index.js"></script>
+    <script src="./utils/requirements.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>

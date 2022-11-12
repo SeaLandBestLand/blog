@@ -1,3 +1,5 @@
+const trueData = window.data
+
 const pages = [
     {
         "page": "Programming",
@@ -41,6 +43,21 @@ function SelectPage(page) {
 
     document.querySelector('.pageDrop').innerHTML = page
 
+    var cateMenu = document.querySelector(".cateMenu");
+    var child = cateMenu.lastElementChild; 
+        while (child) {
+            cateMenu.removeChild(child);
+            child = cateMenu.lastElementChild;
+        }
+    const cateDrop = cateDropTemplate.cloneNode(true)
+    document.querySelector('.cateMenu').appendChild(cateDrop)
+    const exceptions = ['Industry Placement', 'Events', 'Blog', 'Masterclasses']
+    if (exceptions.includes(page)) {
+        document.querySelector('.cateDrop').innerHTML = 'N/A'
+    } else {
+        document.querySelector('.cateDrop').innerHTML = 'Select a Category'
+    }
+
     var pageIndex = pages.findIndex(function (pageName) {
         return pageName.page == page
     })
@@ -51,11 +68,12 @@ function SelectPage(page) {
         if (x > catagories.length) {
             break;
         }
-        cateDrop = cateDropTemplate.cloneNode(true)
+        const cateDrop = cateDropTemplate.cloneNode(true)
 
         cateDrop.style.display = 'flex'
         cateDrop.innerHTML = catagories[x]
-        cateDrop.onclick = () => { CateClick(catagories[x]) }
+        const cateContent = `${catagories[x]}`
+        cateDrop.onclick = () => { CateClick(cateContent) }
         document.querySelector('.cateMenu').appendChild(cateDrop)
     }
 }
@@ -69,7 +87,7 @@ window.onload = () => {
         }
         var pageName = pages[x].page
 
-        pageDrop = pageDropTemplate.cloneNode(true)
+        const pageDrop = pageDropTemplate.cloneNode(true)
         pageDrop.style.display = 'flex'
         pageDrop.innerHTML = pageName
 
@@ -106,5 +124,25 @@ window.onload = () => {
 //SelectPage(page)
 
 function AddBlog() {
+    var title = document.querySelector('.title').value
+    var page = document.querySelector('.pageDrop').innerHTML
+    var category = document.querySelector('.cateDrop').innerHTML
+    var text = document.querySelector('.text').value
+    var date = new Date().getTime()/1000
 
+    if (page.includes('Select a')) {
+        page = ''
+    }
+    if (category.includes('Select a') || category.includes('N/A')) {
+        category = ''
+    }
+
+    console.log(`Copy into data.js:
+    {
+        "title": "${title}",
+        "page": "${page}",
+        "category": "${category}",
+        "text": "${text}",
+        "date": "${date}"
+    },` )
 }

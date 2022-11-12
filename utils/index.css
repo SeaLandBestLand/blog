@@ -123,16 +123,22 @@ body {
 }
 
 .powerpoint {
-    width: 50%;
+    width: 100%;
     height: 40vh;
 }
 
 .requirements-notes {
     display: flex;
+    margin: 20px;
+    width: 50%;
+    height: 40vh;
 }
 
 .requirements-example {
     display: none;
+    margin: none;
+    width: 50%;
+    height: 40vh;
 }
 
 .button-con {

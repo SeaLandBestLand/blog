@@ -1,52 +1,45 @@
 data = [
     {
-        "title": "blog 1",
+        "title": "Text Based Game",
         "page": "Programming",
-        "category": "Python",
-        "text": "desc",
-        "date": ""
+        "category": "C",
+        "text": "Made a text based adventure game in C",
+        "date": "1668292580.571"
     },
     {
-        "title": "blog 2",
-        "page": "CA",
-        "category": "1",
-        "text": "desc",
-        "date": ""
-    },
-    {
-        "title": "blog 3",
-        "page": "Projects",
-        "category": "UI/UX",
-        "text": "desc",
-        "date": ""
-    },
-    {
-        "title": "blog 4",
+        "title": "Psion Vision",
         "page": "Industry Placement",
         "category": "",
-        "text": "desc",
-        "date": ""
+        "text": "This is my placement",
+        "date": "1668292673.992"
     },
     {
-        "title": "blog 5",
-        "page": "Events",
-        "category": "",
-        "text": "desc",
-        "date": ""
-    },
-    {
-        "title": "blog 6",
-        "page": "Blog",
-        "category": "",
-        "text": "desc",
-        "date": ""
-    },
-    {
-        "title": "blog 7",
+        "title": "GitHub",
         "page": "Masterclasses",
         "category": "",
-        "text": "desc",
-        "date": ""
+        "text": "Had a masterclass on how to use the GitHub terminal to merge branches",
+        "date": "1668292733.259"
+    },
+    {
+        "title": "Blog Website",
+        "page": "Programming",
+        "category": "HTML/CSS",
+        "text": "You're looking at it :)",
+        "date": "1668292768.391"
+    },
+    {
+        "title": "Sam HW",
+        "page": "Projects",
+        "category": "Functional Requirements",
+        "text": "Yes",
+        "date": "1668292842.451"
+    },
+    {
+        "title": "Blog",
+        "page": "Blog",
+        "category": "",
+        "text": "Graphic design is *not* my passion",
+        "date": "1668292901.283"
     },
 ]
 

@@ -66,10 +66,6 @@ class Header extends HTMLElement {
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" id="masterClasses" href="./masterclasses.html">Masterclasses</a>
                 </li>
-                <!-- -->
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Contact</a>
-                </li>
               </ul>
             </div>
           </div>

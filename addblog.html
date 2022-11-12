@@ -27,7 +27,7 @@
 
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">Title</span>
-            <input type="text" class="form-control" placeholder="Title" aria-label="Title"
+            <input type="text" class="form-control title" placeholder="Title" aria-label="Title"
                 aria-describedby="basic-addon1">
         </div>
 
@@ -36,11 +36,11 @@
             <div class="dropdown">
                 <a class="btn btn-secondary dropdown-toggle pageDrop" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    Dropdown link
+                    Select a Page
                 </a>
 
                 <ul class="dropdown-menu pageMenu">
-                    <li><a class="dropdown-item pageDropItem">Example</a></li>
+                    <li><a class="dropdown-item pageDropItem">Select a Page</a></li>
                 </ul>
             </div>
         </div>
@@ -50,22 +50,24 @@
             <div class="dropdown">
                 <a class="btn btn-secondary dropdown-toggle cateDrop" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    Dropdown link
+                    Select a Category
                 </a>
 
                 <ul class="dropdown-menu cateMenu">
-                    <li><a class="dropdown-item cateDropItem">Example</a></li>
+                    <li><a class="dropdown-item cateDropItem">Select a Category</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">Text</span>
-            <input type="text" class="form-control" placeholder="Text" aria-label="Text"
+            <input type="text" class="form-control text" placeholder="Text" aria-label="Text"
                 aria-describedby="basic-addon1">
         </div>
 
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary" onclick="AddBlog()">Submit</button>
+
+        <button type="button" class="btn btn-primary" onclick="AddBlog()" style="background-color: grey; border-color: grey">Confirm</button>
 
     </div>
 
@@ -74,6 +76,7 @@
 
 
     <script src="./utils/index.js"></script>
+    <script src="./data.js"></script>
     <script src="./utils/add blog.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
