@@ -45,6 +45,7 @@ body {
 #footer {
     background-color: #202225;
     height: fit-content;
+    width: 100%;
 }
 
 .nav-link {
@@ -58,6 +59,7 @@ body {
 .main {
     width: 100%;
     height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-con {
@@ -97,7 +99,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     height: fit-content;
-    display: none; /* remove for cards*/
+    display: none;
+    /* remove for cards*/
 }
 
 .card {
