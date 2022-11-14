@@ -68,10 +68,7 @@ if (pageLocation.includes('index' || pageLocation == 'https://github.com/SeaLand
         CreateBlog(x)
     }
 } else {
-    var currentSite = pageLocation.substring(pageLocation.indexOf('/') + 1)
-    while (currentSite.includes('/')) {
-        currentSite = currentSite.substring(pageLocation.indexOf('/') - 1)
-    }
+    var currentSite = pageLocation.substring(pageLocation.lastIndexOf('/') + 1)
     console.log(currentSite)
 
     var hasCategories = siteList.slice(4,)
