@@ -59,7 +59,7 @@ function CreateBlog(x) {
     document.querySelector('.blog-con').appendChild(newBlog)
 }
 
-if (pageLocation.includes('index' || pageLocation == 'https://github.com/SeaLandBestLand/blog/')) {
+if (pageLocation.includes('index' || pageLocation == 'https://sealandbestland.github.io/blog/')) {
     console.log('home page')
     for (var x = 1; x < 4; x++) {
         if (x > blogData.length) {
