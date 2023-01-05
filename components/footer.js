@@ -10,9 +10,6 @@ class Footer extends HTMLElement {
                 <div>
                     <p><b>Email:</b> osharp248@fareham.ac.uk</p>
                 </div>
-                <div>
-                    <p>© 2022 Copyright: <a class="text-white" href="https://github.com/SeaLandBestLand">SeaLandBestLand</a></p>
-                </div>
             </div>
         </footer>
       `;
