@@ -80,7 +80,6 @@ if (pageLocation.includes('index' || pageLocation == 'https://github.com/SeaLand
     while (currentSite.includes('/')) {
         currentSite = currentSite.substring(pageLocation.indexOf('/') - 1)
     }
-    var currentSite = pageLocation.substring(pageLocation.lastIndexOf('/') + 1)
 
     var hasCategories = siteList.slice(4,)
     var makeBlog = false
