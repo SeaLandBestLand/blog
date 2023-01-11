@@ -14,9 +14,13 @@ const colours = {
 // list of the html documents to be used when filtering blogs (0-3 has no categories)
 const siteList = ['industry%20placement.html', 'events.html', 'blog.html', 'masterclasses.html', 'ui+ux.html', 'functional%20requirements.html', 'ca%201-4.html', 'ca%205-8.html', 'c.html', 'python.html', 'html+css.html']
 
+// Creates the HTML for a blog post from an example of the html file
 function CreateBlog(x) {
+    // capture teh example blog from the html page
     var newBlog = template.cloneNode(true)
+    // choose the colour for the blog outline
     var categoryColour = blogData[blogData.length - x].page
+    // format the blog category
     var pageCate;
     if (blogData[blogData.length - x].category === "") {
         pageCate = blogData[blogData.length - x].page
@@ -24,6 +28,7 @@ function CreateBlog(x) {
         pageCate = blogData[blogData.length - x].page + ' - ' + blogData[blogData.length - x].category
     }
 
+    // format the blog title
     var title = blogData[blogData.length - x].title;
     title = title.charAt(0).toUpperCase() + title.substr(1).toLowerCase()
 
@@ -47,6 +52,7 @@ function CreateBlog(x) {
 
     var time = date + "-" + month + "-" + year
 
+    // change the contents and styling for the blog post
     newBlog.style.display = 'flex'
     newBlog.querySelector('.blog-title').innerHTML = `<h3>${title}</h3>`
     newBlog.querySelector('.blog-date').innerHTML = time
@@ -55,12 +61,13 @@ function CreateBlog(x) {
     newBlog.style.borderColor = colours[categoryColour]
     newBlog.querySelector('.blog-desc').innerHTML = blogData[blogData.length - x].text
 
-
+    // add the new blog onto the page
     document.querySelector('.blog-con').appendChild(newBlog)
 }
 
+// check if user is on the home page
 if (pageLocation.includes('index' || pageLocation == 'https://github.com/SeaLandBestLand/blog/')) {
-    console.log('home page')
+    // display the latest blogs
     for (var x = 1; x < 4; x++) {
         if (x > blogData.length) {
             break;
@@ -68,11 +75,11 @@ if (pageLocation.includes('index' || pageLocation == 'https://github.com/SeaLand
         CreateBlog(x)
     }
 } else {
+    // display all blogs for related to the page
     var currentSite = pageLocation.substring(pageLocation.indexOf('/') + 1)
     while (currentSite.includes('/')) {
         currentSite = currentSite.substring(pageLocation.indexOf('/') - 1)
     }
-    console.log(currentSite)
 
     var hasCategories = siteList.slice(4,)
     var makeBlog = false

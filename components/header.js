@@ -3,6 +3,7 @@ class Header extends HTMLElement {
     super();
   }
 
+  // html code for the navbar
   connectedCallback() {
     this.innerHTML = `
         <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
